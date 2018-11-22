@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gjp?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+     show-sql: true
+  freemarker:
+    request-context-attribute: request
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /gjp
+
