@@ -16,7 +16,7 @@
         <div class="page-breadcrumb">
             <div class="row">
                 <div class="col-5 align-self-center">
-                    <h4 class="page-title">管理</h4>
+                    <h4 class="page-title">管家婆管理</h4>
                     <div class="d-flex align-items-center"></div>
                 </div>
                 <div class="col-7 align-self-center">
@@ -40,9 +40,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">列表</h4>
+                            <h4 class="card-title">管理列表</h4>
                             <div>
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#add-new-event" class="btn btn-sm btn-outline-info">
+                            <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="btn btn-sm btn-outline-info">
                                 <i class="ti-plus"></i> 添加
                             </a>
                             </div>&nbsp;
@@ -129,14 +129,49 @@
 
 
 <!-- 添加model -->
-<div class="modal fade none-border" id="add-new-event">
-    <div class="modal-dialog">
+<div class="modal fade none-border" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title"><strong>编辑</strong></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
             </div>
             <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="control-label">类别</label>
+                            <input class="form-control form-white"  required type="text" name="flname" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">账户</label>
+                            <input class="form-control form-white"  required type="text" name="zhang_hu" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">金额</label>
+                            <input class="form-control form-white"  required type="text" name="money" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">说明</label>
+                            <input class="form-control form-white"  required type="text" name="description" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">时间</label>
+                            <input class="form-control form-white"  required type="text" name="createtime" />
+                        </div>
+                    <#--<div class="col-md-6">-->
+                    <#--<label class="control-label">Choose Category Color</label>-->
+                    <#--<select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">-->
+                    <#--<option value="success">Success</option>-->
+                    <#--<option value="danger">Danger</option>-->
+                    <#--</select>-->
+                    <#--</div>-->
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-danger waves-effect waves-light save-category" data-dismiss="modal" href="${basePath}/gjp/list/add">Save</button>
+                <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

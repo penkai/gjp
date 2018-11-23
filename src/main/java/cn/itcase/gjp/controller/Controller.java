@@ -41,4 +41,13 @@ public class Controller {
 
 
     }
+
+    @GetMapping("/add")
+    public String add(ZhangWu zhangWu){
+        zhangWuService.save(zhangWu);
+        return "gjp/list";
+    }
+
+
+
 }

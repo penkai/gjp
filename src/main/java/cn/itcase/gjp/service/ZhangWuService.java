@@ -11,4 +11,6 @@ import org.springframework.data.domain.Pageable;
 public interface ZhangWuService {
 
  Page<ZhangWu> findList(Pageable pageable);
+
+ void save(ZhangWu zhangWu);
 }

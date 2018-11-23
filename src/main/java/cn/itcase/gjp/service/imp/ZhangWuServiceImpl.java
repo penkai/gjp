@@ -26,4 +26,9 @@ public class ZhangWuServiceImpl implements ZhangWuService {
         Page<ZhangWu> zhangWuPage= zhangWuRepository.findAll(pageable);
         return zhangWuPage;
     }
+
+    @Override
+    public void save(ZhangWu zhangWu) {
+        zhangWuRepository.save(zhangWu);
+    }
 }

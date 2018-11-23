@@ -9,35 +9,36 @@
     <title>Edit</title>
     <link href="${basePath}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 <!-- 添加model -->
 <div class="modal-content">
     <div class="modal-header">
         <h4 class="modal-title"><strong>编辑</strong></h4>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
     </div>
     <div class="modal-body">
         <form>
             <div class="row">
                 <div class="col-md-6">
                     <label class="control-label">类别</label>
-                    <input class="form-control form-white" placeholder="类别" type="text" name="flname" />
+                    <input class="form-control form-white" placeholder="类别" required type="text" name="flname" />
                 </div>
                 <div class="col-md-6">
                     <label class="control-label">账户</label>
-                    <input class="form-control form-white" placeholder="账户" type="text" name="zhang_hu" />
+                    <input class="form-control form-white" placeholder="账户" required type="text" name="zhang_hu" />
                 </div>
                 <div class="col-md-6">
                     <label class="control-label">金额</label>
-                    <input class="form-control form-white" placeholder="金额" type="text" name="money" />
+                    <input class="form-control form-white" placeholder="金额" required type="text" name="money" />
                 </div>
                 <div class="col-md-6">
                     <label class="control-label">说明</label>
-                    <input class="form-control form-white" placeholder="说明" type="text" name="description" />
+                    <input class="form-control form-white" placeholder="说明" required type="text" name="description" />
                 </div>
                 <div class="col-md-6">
                     <label class="control-label">时间</label>
-                    <input class="form-control form-white" placeholder="时间" type="text" name="createtime" />
+                    <input class="form-control form-white" placeholder="时间" required type="text" name="createtime" />
                 </div>
             <#--<div class="col-md-6">-->
             <#--<label class="control-label">Choose Category Color</label>-->
